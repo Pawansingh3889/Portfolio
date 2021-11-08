@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	/* font-family: 'Caveat', cursive,monospace; */
+	font-family: 'Yanone Kaffeesatz', sans-serif,monospace;
+	margin:0;
+	padding: 0;
+	font-size: 1.8rem;
+	font-weight:400;
+	line-height: 1.4;
+}
+
+li{
+	list-style: none;
+
+}
+
+
+
+nav{
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+box-shadow: 0  0 rgba(0, 0, 0, 0.4);
+z-index: 10;
+	animation-name: come;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	background: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(230,238,244,0.8) 0%, rgba(59,59,131,0.8) 100%, rgba(211,198,222,0.8) 100%, rgba(0,212,255,0.8) 100%);
+
+}
+.menu{
+	display: flex;
+	margin:0;
+	padding: 0;
+	margin-right: 2em;
+}
+.menu a{
+	display: block;
+	font-size: 2rem;
+	padding: 1rem;
+	text-decoration: none;
+	color:#F0F0F0;
+
+}
+
+.menu a:hover{
+	background-color:#45567d;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+.welcome-page{
+	display: flex;
+	width:100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction:row;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,238,244,1) 0%, rgba(59,59,131,1) 100%, rgba(211,198,222,1) 100%, rgba(0,212,255,1) 100%);
+overflow: hidden;
+}
+
+.intro{
+	position:relative;
+	margin-right:2rem;
+	animation-name: come;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes come{
+	from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.test{
+	animation-name:come;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+.image-one{
+	margin-left:2rem;
+	animation-name:come;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+.about-me{
+	display: flex;
+	width:100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction:row;
+   background: rgb(2,0,36);
+   background-color: #F0F0F0;
+   overflow: hidden;
+}
+
+.image-two{
+	position: relative;
+	margin-right: 2rem;
+
+}
+.about{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about h1{
+	text-align: center;
+}
+
+
+.skill-page{
+	display: flex;
+	width:100%;
+	height: 100vh;
+
+	align-items: center;
+	flex-direction:column;
+   background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,238,244,1) 0%, rgba(59,59,131,1) 100%, rgba(211,198,222,1) 100%, rgba(0,212,255,1) 100%);
+   overflow: hidden;
+}
+.skill-cont{
+	width: 100%;
+	padding-left:2rem;
+	padding-right:2rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card{
+	margin-right: 2rem;
+	margin-top:5rem;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5%;
+  	transition: 0.3s;
+  	width:20%;
+  	display: flex;
+  	flex-direction: row;
+}
+.card h2{
+	margin:0;
+	padding:0;
+	margin-right:2rem;
+	font-family: monospace;
+	font-size:20px;
+}
+@keyframes cplus{
+	0%{
+		width:0%;
+		background-color: linear-gradient(90deg,#6a518a,#F0F0F0);
+	}
+	100%{
+		width: 68%;
+		background-color: linear-gradient(180deg,#6a518a,#F0F0F0);
+	}
+}
+@keyframes python{
+	0%{
+		width:0%;
+		background-color: linear-gradient(90deg,#6a518a,#F0F0F0);
+	}
+	100%{
+		width: 48%;
+		background-color: linear-gradient(180deg,#6a518a,#F0F0F0);
+	}
+}
+.animate2{
+	animation-name: python;
+	animation-duration: 2s;
+}
+.animate1{
+	animation-name: cplus;
+	animation-duration: 2s;
+}
+.measure{
+	border-radius: 2%;
+	background-color: #6a518a;
+	width:68%;
+}
+.measure2{
+	border-radius: 2%;
+	background-color: #6a518a;
+	width:48%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+@keyframes cert-anim{
+	from{
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animate3{
+	animation-name: cert-anim;
+	animation-duration: 3s;
+}
+.certs-cont{
+	width: 100%;
+	padding-left:2rem;
+	padding-right:2rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cert-card{
+	margin-right: 2rem;
+	margin-top:5rem;
+	border-radius: 5%;
+  	transition: 0.3s;
+}
+
+.cert-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.projects-page{
+	display: flex;
+	width:100%;
+	height: 100vh;
+	align-items: center;
+	flex-direction:column;
+	background: #F0F0F0;
+   overflow: hidden;
+}
+.projects-page h2{
+	text-align: center;
+	width: 100%;
+}
+.projects-main{
+	display: flex;
+	width:100%;
+	height: 100vh;
+	align-items: center;
+	flex-direction:row;
+	background: #F0F0F0;
+	 overflow: hidden;
+	 flex-wrap: wrap;
+}
+.git-card{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	background:#f0f0ff;
+	align-items: center;
+	height: 100%;
+}
+.git-name{
+	display: flex;
+	border-bottom: 2px solid black;
+}
+.git-name h3{
+	margin-left:2rem;
+}
+.git-name a{
+	text-decoration: none;
+	color:gray;
+}
+.git-name a:hover{
+	color:black;
+	transition-duration: 2s;
+	transition-property:all;
+}
+
+.git-details{
+	padding: 2rem;
+}
+.git-details li{
+	list-style: disc;
+	font-family: 'Caveat', cursive,monospace;
+	font-weight: bold;
+	color: gray;
+}
+
+
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; 
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+
+  .flip-card a{
+	  text-decoration: none;
+	  color: white;
+  }
